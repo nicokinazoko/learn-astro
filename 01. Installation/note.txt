@@ -1,0 +1,35 @@
+-> create astro
+    -> npm create @astro
+        -> to create project 
+-> install astro
+    -> npm i astro
+
+Project structure
+-> src
+    -> All of project code 
+-> public
+    -> For non code, like asset,etc
+-> package.json
+    -> for project
+-> astro.config.mjs
+    -> astro config
+-> tscconfig.json
+    -> ts config
+        -> can use ts --init
+
+
+
+-> src list directory
+    -> pages
+    -> components
+    -> layouts
+    -> styles
+
+-> Pages
+    -> supported file
+        -> astro
+        -> .md (markdown)
+        -> mdx
+        -> html
+        -> js, ts (For endpoints)
+    
