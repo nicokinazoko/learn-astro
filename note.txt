@@ -1,0 +1,36 @@
+-> create astro project
+    -> npm create astro@latest
+    -> it can be html or markdown
+-> to run astro project
+    -> npm run dev
+-> to not make pages is not rendered
+    -> add prefix underscore
+        -> _pages.astro
+        -> _pages.md
+        -> _pages.html
+-> directories
+    -> public
+        -> for images 
+    -> src
+        -> main code
+        -> pages
+            -> front matter
+                -> --- ---
+                    -> js side 
+                    -> already async function
+                    -> run on build site
+                    -> to access in html is using {} (bracket)
+                        -> it can be use it like this
+                            -> <p>
+                                    {myArray.map((name) => (
+                                        <p>{name}</p>
+                                        <p>Hi</p>
+                                    ))}
+                                </p>
+                -> below is for output
+                -> it can be used as import data
+                    -> import people from '../data/sample.json';
+    -> astro.config.mjs
+        -> astro configuration
+            -> astro setting will be placed in here
+    
