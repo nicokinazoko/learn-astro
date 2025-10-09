@@ -9,23 +9,13 @@ const myObj = {
 const myArray = ['Nico 1', 'Nico 2'];
 
 import people from '../data/sample.json';
-console.log('hey');
+import BaseLayout from '../layouts/BaseLayout.astro';
 
 const req = await fetch('https://jsonplaceholder.typicode.com/todos/1');
 const data = await req.json();
-console.log(data);
 ---
-
-<html lang='en'>
-  <head>
-    <meta charset='utf-8' />
-    <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
-    <meta name='viewport' content='width=device-width' />
-    <meta name='generator' content={Astro.generator} />
-    <title>Astro</title>
-  </head>
-  <body>
-    <h1>Astro</h1>
+<BaseLayout title='Home'>
+		<h1>Astro</h1>
     <h1>Astro {myObj.age}</h1>
 	<p>
 		{myArray.map((name) => (
@@ -44,6 +34,14 @@ console.log(data);
 
 
 	<p>Astro {data.title}</p>
-  </body>
-</html>
+	 </BaseLayout>
 
+<script>
+	import {consoleMe} from '../libs/util';
+	consoleMe();
+	const heading = document.querySelector('h1') as HTMLHeadingElement;
+
+	heading.addEventListener('click', () => {
+		console.log('heading');
+	});
+</script>

@@ -33,4 +33,28 @@
     -> astro.config.mjs
         -> astro configuration
             -> astro setting will be placed in here
+
+-> layout and slots
+    -> using layout
+        -> <slot />
+            -> tag for define it will use the page
+-> props
+    -> to pass variable to each pages
+        -> use it like class
+            -> <BaseLayout title='Home'>
+                -> for pass the variable
+            -> Astro.props.{variable}
+                -> to set the variable
+-> style
+    -> can use it like use style css
+        -> it can be inlined or outline
+            -> if inline can be used like this
+                -> <a style={{}}></a>
+    -> is
+        -> is:global
+            -> to make all style become effected in global
+        -> is:inline
+            -> to make script is in same line, not in different file in inspect
+-> script
+    -> it default with TS
     
